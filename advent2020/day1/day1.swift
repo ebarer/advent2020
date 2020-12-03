@@ -7,36 +7,44 @@
 
 import Foundation
 
-func day1() {
-    let day1_input = AdventParser<Int>(file: "day1.txt").inputs
-    print("Day 1, Part 1: \(day1_1(entries: day1_input) ?? (-1,-1,-1))")
-    print("Day 1, Part 2: \(day1_2(entries: day1_input) ?? (-1,-1,-1,-1))")
-}
+struct Day1: Day {
+    var index: Int
+    var input: [Any]
+    
+    init() {
+        index = 1
+        input = AdventParser<Int>(file: "day1.txt").inputs ?? []
+    }
+    
+    func findPair(sum: Int) -> (Int, Int)? {
+        var found = Set<Int>()
+        for val in input as! [Int] {
+            let remainder = sum - val
+            if found.contains(remainder) {
+                return (val, remainder)
+            }
 
-func day1_1(entries: [Int]) -> (a: Int, b: Int, result: Int)? {
-    for i in 0..<entries.count {
-        for j in i+1..<entries.count {
-            if (entries[i] + entries[j]) == 2020 {
-                let result = entries[i] * entries[j]
-                return (entries[i], entries[j], result)
+            found.insert(val)
+        }
+        
+        return nil
+    }
+    
+    func partOne() -> Any {
+        if let pair = findPair(sum: 2020) {
+            return pair.0 * pair.1
+        }
+        
+        return "None"
+    }
+    
+    func partTwo() -> Any {
+        for val in input as! [Int] {
+            if let pair = findPair(sum: 2020 - val) {
+                return pair.0 * pair.1 * val
             }
         }
+        
+        return "None"
     }
-
-    return nil
-}
-
-func day1_2(entries: [Int]) -> (a: Int, b: Int, c: Int, result: Int)? {
-    for i in 0..<entries.count {
-        for j in i+1..<entries.count {
-            for k in i+1..<entries.count {
-                if (entries[i] + entries[j] + entries[k]) == 2020 {
-                    let result = entries[i] * entries[j] * entries[k]
-                    return (entries[i], entries[j], entries[k], result)
-                }
-            }
-        }
-    }
-
-    return nil
 }

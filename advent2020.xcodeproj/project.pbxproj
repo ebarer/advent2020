@@ -11,6 +11,12 @@
 		569A65B025760C1F008BFFE8 /* day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A65AF25760C1F008BFFE8 /* day1.swift */; };
 		56CDD4422576183500E9C5B9 /* day1.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 56CDD4402576162000E9C5B9 /* day1.txt */; };
 		56CDD44625761CDB00E9C5B9 /* helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDD44525761CDB00E9C5B9 /* helper.swift */; };
+		CE847B462578C7A9008266B5 /* day4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE847B452578C7A9008266B5 /* day4.swift */; };
+		CE847B822578E88E008266B5 /* day4.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE847B492578C7BA008266B5 /* day4.txt */; };
+		CE9C6A6325775EE600892DC5 /* day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9C6A6225775EE600892DC5 /* day2.swift */; };
+		CE9C6A682577634800892DC5 /* day2.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE9C6A6525775EF500892DC5 /* day2.txt */; };
+		CE9C6A6C25777CEE00892DC5 /* day3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9C6A6B25777CEE00892DC5 /* day3.swift */; };
+		CE9C6A7025777E2300892DC5 /* day3.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE9C6A6F25777D0100892DC5 /* day3.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -21,6 +27,9 @@
 			dstSubfolderSpec = 16;
 			files = (
 				56CDD4422576183500E9C5B9 /* day1.txt in CopyFiles */,
+				CE9C6A682577634800892DC5 /* day2.txt in CopyFiles */,
+				CE9C6A7025777E2300892DC5 /* day3.txt in CopyFiles */,
+				CE847B822578E88E008266B5 /* day4.txt in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +41,12 @@
 		569A65AF25760C1F008BFFE8 /* day1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day1.swift; sourceTree = "<group>"; };
 		56CDD4402576162000E9C5B9 /* day1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = day1.txt; sourceTree = "<group>"; };
 		56CDD44525761CDB00E9C5B9 /* helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helper.swift; sourceTree = "<group>"; };
+		CE847B452578C7A9008266B5 /* day4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day4.swift; sourceTree = "<group>"; };
+		CE847B492578C7BA008266B5 /* day4.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = day4.txt; sourceTree = "<group>"; };
+		CE9C6A6225775EE600892DC5 /* day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day2.swift; sourceTree = "<group>"; };
+		CE9C6A6525775EF500892DC5 /* day2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = day2.txt; sourceTree = "<group>"; };
+		CE9C6A6B25777CEE00892DC5 /* day3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day3.swift; sourceTree = "<group>"; };
+		CE9C6A6F25777D0100892DC5 /* day3.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = day3.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +81,9 @@
 			children = (
 				569A65A525760A58008BFFE8 /* main.swift */,
 				56CDD44525761CDB00E9C5B9 /* helper.swift */,
+				CE847B442578C79A008266B5 /* day4 */,
+				CE9C6A6A25777CE400892DC5 /* day3 */,
+				CE9C6A6125775E3000892DC5 /* day2 */,
 				56CDD44925761F3900E9C5B9 /* day1 */,
 			);
 			path = advent2020;
@@ -78,6 +96,33 @@
 				56CDD4402576162000E9C5B9 /* day1.txt */,
 			);
 			path = day1;
+			sourceTree = "<group>";
+		};
+		CE847B442578C79A008266B5 /* day4 */ = {
+			isa = PBXGroup;
+			children = (
+				CE847B452578C7A9008266B5 /* day4.swift */,
+				CE847B492578C7BA008266B5 /* day4.txt */,
+			);
+			path = day4;
+			sourceTree = "<group>";
+		};
+		CE9C6A6125775E3000892DC5 /* day2 */ = {
+			isa = PBXGroup;
+			children = (
+				CE9C6A6225775EE600892DC5 /* day2.swift */,
+				CE9C6A6525775EF500892DC5 /* day2.txt */,
+			);
+			path = day2;
+			sourceTree = "<group>";
+		};
+		CE9C6A6A25777CE400892DC5 /* day3 */ = {
+			isa = PBXGroup;
+			children = (
+				CE9C6A6B25777CEE00892DC5 /* day3.swift */,
+				CE9C6A6F25777D0100892DC5 /* day3.txt */,
+			);
+			path = day3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,7 +151,7 @@
 		569A659A25760A58008BFFE8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					569A65A125760A58008BFFE8 = {
@@ -137,8 +182,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56CDD44625761CDB00E9C5B9 /* helper.swift in Sources */,
+				CE847B462578C7A9008266B5 /* day4.swift in Sources */,
+				CE9C6A6C25777CEE00892DC5 /* day3.swift in Sources */,
+				CE9C6A6325775EE600892DC5 /* day2.swift in Sources */,
 				569A65B025760C1F008BFFE8 /* day1.swift in Sources */,
+				56CDD44625761CDB00E9C5B9 /* helper.swift in Sources */,
 				569A65A625760A58008BFFE8 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,7 +245,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -252,7 +299,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -265,6 +311,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -274,6 +321,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
