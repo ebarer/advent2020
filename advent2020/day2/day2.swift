@@ -13,7 +13,7 @@ struct Day2: Day {
     
     init() {
         index = 2
-        let raw = AdventParser<String>(file: "day2.txt").inputs ?? []
+        let raw = AdventParser<String>(file: "day2.txt").inputs() ?? []
         input = raw.map { (record) -> (password: String, required: Character, range: [Int]) in
             let components = record.split(whereSeparator: \.isWhitespace)
             let password: String = String(components[2])

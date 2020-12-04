@@ -34,7 +34,7 @@ class AdventParser<T> {
         fileName = file
     }
 
-    var inputs: [T]? {
+    func inputs(split: Bool = true) -> [T]? {
         let base = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
         let url = URL(fileURLWithPath: self.fileName, relativeTo: base)
 
@@ -43,6 +43,10 @@ class AdventParser<T> {
             return nil
         }
         
+        if (!split) {
+            return [contents] as? [T]
+        }
+
         let entries = contents.split(whereSeparator: \.isNewline)
 
         if T.self == Int.self {
@@ -60,5 +64,20 @@ class AdventParser<T> {
 extension StringProtocol {
     subscript(offset: Int) -> Character {
         self[index(startIndex, offsetBy: offset)]
+    }
+    
+    var range: NSRange {
+        return NSRange(location: 0, length: self.count)
+    }
+    
+    func substringMatch(pattern: String) -> NSTextCheckingResult? {
+        guard let regex = try? NSRegularExpression(pattern: pattern) else { return nil }
+        return regex.firstMatch(in: String(self), options: [], range: self.range)
+    }
+}
+
+extension Int {
+    func inClosedRange(_ lower: Int, _ upper: Int) -> Bool {
+        return ClosedRange(uncheckedBounds:(lower, upper)).contains(self)
     }
 }

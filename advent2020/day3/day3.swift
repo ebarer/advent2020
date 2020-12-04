@@ -19,7 +19,7 @@ struct Day3: Day {
         
     init() {
         index = 3
-        input = AdventParser<String>(file: "day3.txt").inputs ?? []
+        input = AdventParser<String>(file: "day3.txt").inputs() ?? []
         rowWidth = (input as! [String])[0].count
     }
     

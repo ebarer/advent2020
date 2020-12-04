@@ -41,5 +41,5 @@ func today() {
     print(seperator())
 }
 
-today()
+//today()
 allDays()

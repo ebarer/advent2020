@@ -13,7 +13,7 @@ struct Day1: Day {
     
     init() {
         index = 1
-        input = AdventParser<Int>(file: "day1.txt").inputs ?? []
+        input = AdventParser<Int>(file: "day1.txt").inputs() ?? []
     }
     
     func findPair(sum: Int) -> (Int, Int)? {
