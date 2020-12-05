@@ -8,12 +8,10 @@
 import Foundation
 
 struct Day1: Day {
-    var index: Int
-    var input: [Any]
+    var index: Int = 1
     
-    init() {
-        index = 1
-        input = AdventParser<Int>(file: "day1.txt").inputs() ?? []
+    var input: [Any] {
+        return AdventParser<Int>(file: "day\(index).txt").inputs() ?? []
     }
     
     func findPair(sum: Int) -> (Int, Int)? {

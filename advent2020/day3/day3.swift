@@ -13,13 +13,12 @@ struct Slope {
 }
 
 struct Day3: Day {
-    var index: Int
+    var index: Int = 3
     var input: [Any]
-    let rowWidth: Int
-        
+    var rowWidth: Int
+    
     init() {
-        index = 3
-        input = AdventParser<String>(file: "day3.txt").inputs() ?? []
+        input = AdventParser<String>(file: "day\(index).txt").inputs() ?? []
         rowWidth = (input as! [String])[0].count
     }
     

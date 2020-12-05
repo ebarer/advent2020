@@ -12,35 +12,28 @@ let days: [Day] = [
     Day2(),
     Day3(),
     Day4(),
-    Day5()
+    Day5(),
+    Day6()
 ]
 
 func allDays() {
     print("Advent of Code 2020")
     
-    let dayIndex = "Day".padding(toLength: 8, withPad: " ", startingAt: 0)
-    let partOne = "Part 1".padding(toLength: 15, withPad: " ", startingAt: 0)
-    let partTwo = "Part 2".padding(toLength: 15, withPad: " ", startingAt: 0)
-    print("\n  \(dayIndex) \(partOne) \(partTwo)")
+    let headerDay = "Day".padding(toLength: 8, withPad: " ", startingAt: 0)
+    let headerPart1 = "Part 1".padding(toLength: 15, withPad: " ", startingAt: 0)
+    let headerPart2 = "Part 2".padding(toLength: 15, withPad: " ", startingAt: 0)
+    print("\n  \(headerDay) \(headerPart1) \(headerPart2)")
 
-    days.reversed().forEach { print($0.description) }
+    days.dropLast().forEach { print($0.description) }
     print(seperator())
 }
 
 func today() {
-    guard let start = DateComponents(calendar: Calendar.current, timeZone: TimeZone(abbreviation: "EST"), year: 2020, month: 12, day: 1).date else {
-        return
-    }
-    
-    let dif = Calendar.current.compare(Date(), to: start, toGranularity: .day).rawValue + 1
-    guard dif < days.count else {
-        return
-    }
-    
-    print("Today")
+    guard let start = DateComponents(calendar: Calendar.current, timeZone: TimeZone(abbreviation: "EST"), year: 2020, month: 12, day: 1).date,
+          let dif = Calendar.current.dateComponents([.day], from: start, to: Date()).day else { return }
     print(days[dif].description)
     print(seperator())
 }
 
-//today()
-allDays()
+//allDays()
+today()

@@ -8,14 +8,11 @@
 import Foundation
 
 struct Day4: Day {
-    let index: Int
+    let index: Int = 4
     var input: [Any]
     
     init() {
-        index = 4
-        let raw = AdventParser<String>(file: "day4.txt").inputs(split: false)?[0] ?? "None"
-
-        input = raw.components(separatedBy: "\n\n").map { entry in
+        input = (AdventParser<String>(file: "day\(index).txt").inputs(split: false)?[0] ?? "").components(separatedBy: "\n\n").map { entry in
             let fields = entry.split(whereSeparator: \.isWhitespace)
             var passport = [String:String]()
             

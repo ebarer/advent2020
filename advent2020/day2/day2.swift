@@ -8,13 +8,12 @@
 import Foundation
 
 struct Day2: Day {
-    var index: Int
+    var index: Int = 2
     var input: [Any]
     
     init() {
-        index = 2
-        let raw = AdventParser<String>(file: "day2.txt").inputs() ?? []
-        input = raw.map { (record) -> (password: String, required: Character, range: [Int]) in
+        input = (AdventParser<String>(file: "day\(index).txt").inputs() ?? []).map {
+                (record) -> (password: String, required: Character, range: [Int]) in
             let components = record.split(whereSeparator: \.isWhitespace)
             let password: String = String(components[2])
             let required: Character = components[1][0]
