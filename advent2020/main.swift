@@ -13,7 +13,8 @@ let days: [Day] = [
     Day3(),
     Day4(),
     Day5(),
-    Day6()
+    Day6(),
+    Day7()
 ]
 
 func allDays() {
