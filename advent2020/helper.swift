@@ -16,15 +16,15 @@ protocol Day {
 
 extension Day {
     var description: String {
-        let dayIndex = "| Day \(self.index)".padding(toLength: 8, withPad: " ", startingAt: 0)
-        let partOne = "| \(self.partOne())".padding(toLength: 15, withPad: " ", startingAt: 0)
-        let partTwo = "| \(self.partTwo())".padding(toLength: 15, withPad: " ", startingAt: 0)
+        let dayIndex = "| Day \(self.index)".padding(toLength: 9, withPad: " ", startingAt: 0)
+        let partOne = "| \(self.partOne())".padding(toLength: 20, withPad: " ", startingAt: 0)
+        let partTwo = "| \(self.partTwo())".padding(toLength: 20, withPad: " ", startingAt: 0)
         return "\(seperator())\(dayIndex) \(partOne) \(partTwo)|"
     }
 }
 
 func seperator() -> String {
-    return "+\(String(repeating: "-", count: 39))+\n"
+    return "+\(String(repeating: "-", count: 50))+\n"
 }
 
 class AdventParser<T> {

@@ -27,6 +27,8 @@
 		CE9C6A682577634800892DC5 /* day2.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE9C6A6525775EF500892DC5 /* day2.txt */; };
 		CE9C6A6C25777CEE00892DC5 /* day3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9C6A6B25777CEE00892DC5 /* day3.swift */; };
 		CE9C6A7025777E2300892DC5 /* day3.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE9C6A6F25777D0100892DC5 /* day3.txt */; };
+		CEFC395B2580A29E0038AD79 /* day10.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC395A2580A29E0038AD79 /* day10.swift */; };
+		CEFC395E2580A2AE0038AD79 /* day10.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEFC395D2580A2A80038AD79 /* day10.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +38,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				CEFC395E2580A2AE0038AD79 /* day10.txt in CopyFiles */,
 				CE847BC525801BF8008266B5 /* day9.txt in CopyFiles */,
 				CE847BBD257E0491008266B5 /* day8.txt in CopyFiles */,
 				CE847BB5257CDF1B008266B5 /* day7.txt in CopyFiles */,
@@ -72,6 +75,9 @@
 		CE9C6A6525775EF500892DC5 /* day2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = day2.txt; sourceTree = "<group>"; };
 		CE9C6A6B25777CEE00892DC5 /* day3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day3.swift; sourceTree = "<group>"; };
 		CE9C6A6F25777D0100892DC5 /* day3.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = day3.txt; sourceTree = "<group>"; };
+		CEFC395A2580A29E0038AD79 /* day10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day10.swift; sourceTree = "<group>"; };
+		CEFC395D2580A2A80038AD79 /* day10.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = day10.txt; sourceTree = "<group>"; };
+		CEFC39602580A38F0038AD79 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +110,10 @@
 		569A65A425760A58008BFFE8 /* advent2020 */ = {
 			isa = PBXGroup;
 			children = (
+				CEFC39602580A38F0038AD79 /* README.md */,
 				569A65A525760A58008BFFE8 /* main.swift */,
 				56CDD44525761CDB00E9C5B9 /* helper.swift */,
+				CEFC39592580A2390038AD79 /* day10 */,
 				CE847BBF257F95EF008266B5 /* day9 */,
 				CE847BB7257E0472008266B5 /* day8 */,
 				CE847BAF257CDEDE008266B5 /* day7 */,
@@ -200,6 +208,15 @@
 			path = day3;
 			sourceTree = "<group>";
 		};
+		CEFC39592580A2390038AD79 /* day10 */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC395A2580A29E0038AD79 /* day10.swift */,
+				CEFC395D2580A2A80038AD79 /* day10.txt */,
+			);
+			path = day10;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -262,6 +279,7 @@
 				CE9C6A6C25777CEE00892DC5 /* day3.swift in Sources */,
 				CE847BB9257E0481008266B5 /* day8.swift in Sources */,
 				CE9C6A6325775EE600892DC5 /* day2.swift in Sources */,
+				CEFC395B2580A29E0038AD79 /* day10.swift in Sources */,
 				CE847BC125801BE8008266B5 /* day9.swift in Sources */,
 				569A65B025760C1F008BFFE8 /* day1.swift in Sources */,
 				56CDD44625761CDB00E9C5B9 /* helper.swift in Sources */,

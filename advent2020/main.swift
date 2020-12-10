@@ -16,7 +16,8 @@ let days: [Day] = [
     Day6(),
     Day7(),
     Day8(),
-    Day9()
+    Day9(),
+    Day10()
 ]
 
 func allDays() {
@@ -38,5 +39,5 @@ func today() {
     print(seperator())
 }
 
-today()
 //allDays()
+today()
