@@ -29,6 +29,8 @@
 		CE9C6A7025777E2300892DC5 /* day3.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE9C6A6F25777D0100892DC5 /* day3.txt */; };
 		CEFC395B2580A29E0038AD79 /* day10.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC395A2580A29E0038AD79 /* day10.swift */; };
 		CEFC395E2580A2AE0038AD79 /* day10.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEFC395D2580A2A80038AD79 /* day10.txt */; };
+		CEFC3964258232F90038AD79 /* day11.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC3963258232F90038AD79 /* day11.swift */; };
+		CEFC3968258233100038AD79 /* day11.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEFC3967258233020038AD79 /* day11.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +40,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				CEFC3968258233100038AD79 /* day11.txt in CopyFiles */,
 				CEFC395E2580A2AE0038AD79 /* day10.txt in CopyFiles */,
 				CE847BC525801BF8008266B5 /* day9.txt in CopyFiles */,
 				CE847BBD257E0491008266B5 /* day8.txt in CopyFiles */,
@@ -78,6 +81,8 @@
 		CEFC395A2580A29E0038AD79 /* day10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day10.swift; sourceTree = "<group>"; };
 		CEFC395D2580A2A80038AD79 /* day10.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = day10.txt; sourceTree = "<group>"; };
 		CEFC39602580A38F0038AD79 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		CEFC3963258232F90038AD79 /* day11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day11.swift; sourceTree = "<group>"; };
+		CEFC3967258233020038AD79 /* day11.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = day11.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +118,7 @@
 				CEFC39602580A38F0038AD79 /* README.md */,
 				569A65A525760A58008BFFE8 /* main.swift */,
 				56CDD44525761CDB00E9C5B9 /* helper.swift */,
+				CEFC3962258232EF0038AD79 /* day11 */,
 				CEFC39592580A2390038AD79 /* day10 */,
 				CE847BBF257F95EF008266B5 /* day9 */,
 				CE847BB7257E0472008266B5 /* day8 */,
@@ -217,6 +223,15 @@
 			path = day10;
 			sourceTree = "<group>";
 		};
+		CEFC3962258232EF0038AD79 /* day11 */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC3963258232F90038AD79 /* day11.swift */,
+				CEFC3967258233020038AD79 /* day11.txt */,
+			);
+			path = day11;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -286,6 +301,7 @@
 				569A65A625760A58008BFFE8 /* main.swift in Sources */,
 				CE847BB1257CDEF8008266B5 /* day7.swift in Sources */,
 				CE847B9F257A5468008266B5 /* day5.swift in Sources */,
+				CEFC3964258232F90038AD79 /* day11.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
