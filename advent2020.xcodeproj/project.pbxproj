@@ -31,6 +31,8 @@
 		CEFC395E2580A2AE0038AD79 /* day10.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEFC395D2580A2A80038AD79 /* day10.txt */; };
 		CEFC3964258232F90038AD79 /* day11.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC3963258232F90038AD79 /* day11.swift */; };
 		CEFC3968258233100038AD79 /* day11.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEFC3967258233020038AD79 /* day11.txt */; };
+		CEFC396C258483F10038AD79 /* day12.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC396B258483F10038AD79 /* day12.swift */; };
+		CEFC39702584840E0038AD79 /* day12.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEFC396F258483FA0038AD79 /* day12.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +42,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				CEFC39702584840E0038AD79 /* day12.txt in CopyFiles */,
 				CEFC3968258233100038AD79 /* day11.txt in CopyFiles */,
 				CEFC395E2580A2AE0038AD79 /* day10.txt in CopyFiles */,
 				CE847BC525801BF8008266B5 /* day9.txt in CopyFiles */,
@@ -83,6 +86,8 @@
 		CEFC39602580A38F0038AD79 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		CEFC3963258232F90038AD79 /* day11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day11.swift; sourceTree = "<group>"; };
 		CEFC3967258233020038AD79 /* day11.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = day11.txt; sourceTree = "<group>"; };
+		CEFC396B258483F10038AD79 /* day12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day12.swift; sourceTree = "<group>"; };
+		CEFC396F258483FA0038AD79 /* day12.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = day12.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +123,7 @@
 				CEFC39602580A38F0038AD79 /* README.md */,
 				569A65A525760A58008BFFE8 /* main.swift */,
 				56CDD44525761CDB00E9C5B9 /* helper.swift */,
+				CEFC396A258483D20038AD79 /* day12 */,
 				CEFC3962258232EF0038AD79 /* day11 */,
 				CEFC39592580A2390038AD79 /* day10 */,
 				CE847BBF257F95EF008266B5 /* day9 */,
@@ -232,6 +238,15 @@
 			path = day11;
 			sourceTree = "<group>";
 		};
+		CEFC396A258483D20038AD79 /* day12 */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC396B258483F10038AD79 /* day12.swift */,
+				CEFC396F258483FA0038AD79 /* day12.txt */,
+			);
+			path = day12;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -296,6 +311,7 @@
 				CE9C6A6325775EE600892DC5 /* day2.swift in Sources */,
 				CEFC395B2580A29E0038AD79 /* day10.swift in Sources */,
 				CE847BC125801BE8008266B5 /* day9.swift in Sources */,
+				CEFC396C258483F10038AD79 /* day12.swift in Sources */,
 				569A65B025760C1F008BFFE8 /* day1.swift in Sources */,
 				56CDD44625761CDB00E9C5B9 /* helper.swift in Sources */,
 				569A65A625760A58008BFFE8 /* main.swift in Sources */,
