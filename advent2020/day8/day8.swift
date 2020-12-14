@@ -13,10 +13,6 @@ struct Day8: Day {
     
     init() {
         input = AdventParser<String>(file: "day\(index).txt").inputs() ?? []
-//        for ins in input as! [String] {
-//            print(ins)
-//        }
-//        print(seperator())
     }
     
     func executeInstr(num: Int, op: String, val: Int, acc: inout Int) -> Int {
