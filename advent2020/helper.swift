@@ -134,6 +134,14 @@ extension Array where Element == Character {
     }
 }
 
+extension Dictionary {
+    mutating func merge(dict: [Key: Value]){
+        for (k, v) in dict {
+            updateValue(v, forKey: k)
+        }
+    }
+}
+
 extension String {
     var range: NSRange {
         return NSRange(location: 0, length: self.count)
